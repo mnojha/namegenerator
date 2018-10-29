@@ -8,20 +8,18 @@
     <link href="static/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <form method="POST" action="{% url 'search' %}">{% csrf_token %}
     <div class="s01">
-        <fieldset>
-          <legend><font color="White"> <h2>Search Amazing Names</h2></legend>
-        </fieldset>
+      <form>
         <div class="inner-form">
+        <fieldset>
+          <h1><font color="Violet"> Names are sent in your Email Id:- {{ email }}</font></h1>
+        </fieldset>
+        
           <div class="input-field first-wrap">
-            <input id="search" name="human_name" type="text" placeholder="Enter name" />
-            <input type="email" name="email" placeholder="Enter email">
           </div>
-          <div class="input-field third-wrap">
-            <button class="btn-search" type="submit">Submit</button>
-          </div>
+          
         </div>
       </form>
+    </div>
   </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

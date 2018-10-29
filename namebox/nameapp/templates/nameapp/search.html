@@ -14,12 +14,22 @@
           <legend>The Amazing Names</legend>
         </fieldset>
         <div class="inner-form">
-          <ul> 
-            <h2>
+          <ul> <h1><font color="Blue">
+            {{ email }}
+          </font>
+            <h2><font color="Red">
             {{ human_name }}
-            {{ ran.human_name }}
+              <ul>
+              {% for ran in object_list %}
+              <li>
+               {{ ran.human_name }}
+               </li>
+              {% endfor %}
+              </li>
+              </ul>
+            </font>  
             </h2>
-</ul>
+          </ul>
 
           <div class="input-field first-wrap">
           </div>
